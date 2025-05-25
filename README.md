@@ -1,2 +1,186 @@
-# MZ
-Brand
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ماركة - الصفحة الرئيسية</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      direction: rtl;
+    }
+
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: #4a90e2;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .hero h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+      letter-spacing: 1.5px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-top: 50px;
+    }
+
+    section h3 {
+      font-size: 28px;
+      color: #4a90e2;
+      margin-bottom: 25px;
+      border-bottom: 3px solid #4a90e2;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .about-text, .services-list, .contact-info {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .services-list ul {
+      list-style: none;
+      padding-right: 0;
+    }
+
+    .services-list li {
+      margin-bottom: 15px;
+      padding-right: 10px;
+      position: relative;
+    }
+
+    .services-list li::before {
+      content: "✓";
+      position: absolute;
+      right: 0;
+      color: #4a90e2;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin: 50px 0 20px 0;
+      color: #888;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 10px;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ماركة</h1>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#about">عن الماركة</a>
+    <a href="#services">الخدمات</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+</header>
+
+<div class="container">
+  <section id="home" class="hero">
+    <h2>مرحبا بكم في ماركة</h2>
+    <p>نقدم أفضل المنتجات والخدمات بأعلى جودة وبأسلوب عصري وشبابي يناسب تطلعاتكم.</p>
+  </section>
+
+  <section id="about">
+    <h3>عن الماركة</h3>
+    <p class="about-text">
+      ماركة تأسست بهدف تقديم حلول مبتكرة وعصرية في عالم المنتجات والخدمات. نركز على الجودة والتفرد لنكون دائماً الخيار الأول لعملائنا.
+    </p>
+  </section>
+
+  <section id="services">
+    <h3>الخدمات</h3>
+    <div class="services-list">
+      <ul>
+        <li>منتجات عالية الجودة بتصميم عصري</li>
+        <li>خدمة دعم فني مميزة وسريعة</li>
+        <li>توصيل سريع وآمن</li>
+        <li>أسعار تنافسية تناسب الجميع</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>تواصل معنا</h3>
+    <div class="contact-info">
+      <p>العنوان: شارع الابتكار، المدينة</p>
+      <p>الهاتف: 0123456789</p>
+      <p>البريد الإلكتروني: info@marka.com</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  جميع الحقوق محفوظة © 2025 ماركة
+</footer>
+
+</body>
+</html>
